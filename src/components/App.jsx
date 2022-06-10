@@ -11,6 +11,7 @@ function App() {
     const { name, value } = event.target;
 
     setContact((prevValue) => {
+      console.log(prevValue);
       return {
         ...prevValue,
         [name]: value
